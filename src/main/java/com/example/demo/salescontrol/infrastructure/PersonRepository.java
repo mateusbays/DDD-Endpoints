@@ -1,8 +1,7 @@
-package com.example.demo;
+package com.example.demo.salescontrol.infrastructure;
 
+import com.example.demo.salescontrol.model.entities.Person;
 import org.springframework.data.repository.CrudRepository;
-
-import java.util.Optional;
 
 public interface PersonRepository extends CrudRepository<Person, Integer> {
 

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.salescontrol.model.entities;
 
 
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Person {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
     private boolean deleted = false;
@@ -19,7 +19,7 @@ public class Person {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -27,15 +27,15 @@ public class Person {
         this.id = id;
     }
 
-    public Integer getId(){
+    public Integer getId() {
         return id;
     }
 
-    public void setDeleted (boolean deleted) {
+    public void setDeleted(boolean deleted) {
         this.deleted = deleted;
     }
 
-    public boolean getDeleted(){
+    public boolean getDeleted() {
         return deleted;
     }
 }
